@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpeg">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="container-text">
+                <p>Python Full Stack Developer</p>
+                <h1>Hi, I'm <span>Bharath A </span><br></h1>
+                <h3>From Trichy</h3>
+            </div>
+        </div>
+
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/about me.png" >
+                </div>
+                <div class="col-2">
+                    <h1> About Me </h1>
+                    <p>My instinct is to learn, think, analyse and implement knowledge with a creative and innovative approaching project execution. I shall deliver the best of me to accomplish the responsibilities given to me.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Development</span><br> Web/App Designing, Web/App Development, React </li>
+                            <li><span>Back End Development</span><br> Python, Django </li>
+                            <li><span>Database</span><br> MySQL</li>
+ 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sun Pharmaceutical Industries Limited</span><br> Sales Executive (04/2023 - 10/2024) </li>
+                            <li><span>Intas Pharmaceutical private limited</span><br> Business Executive (08/2022 - 03/2023) </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Fita Acadamy</span><br> Python Full Stack Development <br> (10/2024 - 3/2025) </li>
+                            <li><span>BSc - Chemistry</span><br> Bishop Heber College - Trichy <br> (2019 - 2022) </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Python Web Application Design and Development</h1>
+                    <p>The process of creating web applications and websites using the Python programming language</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h1>Web / App Design</h1>
+                    <p>Focuses on the look and feel of the web application <br> in the wider context of software development</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h1>Django Development Services</h1>
+                    <p>The provision of expertise in building web applications using the Django framework</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image1.jpg" >
+                    <div class="workdetail">
+                        <h3>App and Website Development</h3>
+                        <p>A detailed outline of a web application <br> project, explaining its purpose, target audience,<br> key functionalities, technical requirements, and desired user experience</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image 2.jpg">
+
+                    <div class="workdetail">
+                        <h3>E-Commerce Website</h3>
+                        <p>Designing and building an online <br>store to sell products and services</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image 3.jpg">
+                    <div class="workdetail">
+                        <h3>Hotel Websites </h3>
+                        <p>Aims to develop an online platform for a hotel,<br> allowing potential guests to access comprehensive information about the property,<br> view room details, check availability, book reservations directly,<br> and manage their bookings</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More </a>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>Bharathbharath46558@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>8525022072</p>
+                    <div class="socialmedia-icon">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Enter Message"></textarea>
+                        <button  class="btn btn2">Submit</button>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright &copy; Bharath Made with <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i><i class="fa-brands fa-js"></i></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
